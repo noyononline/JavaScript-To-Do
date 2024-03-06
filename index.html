@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      #wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn {
+        height: 30px;
+      }
+
+      #number {
+        margin: 0px 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="contact"
+      class="p-[20px] bg-orange-500 w-[300px] mx-auto my-[50px]"
+    >
+      <input
+        class="my-[10px] p-[5px]"
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+      />
+      <input
+        id="phone"
+        class="p-[5px]"
+        type="text"
+        placeholder="Enter your number"
+      />
+      <br />
+      <button id="action" class="bg-green-500 p-2 my-2">Add New</button>
+    </div>
+
+    <div class="wrapper flex flex-col">
+      <h1 class="mx-auto my-[20px]">Contact List</h1>
+      <ul id="contacts" class="mx-auto"></ul>
+    </div>
+
+    <script src="./application.js"></script>
+  </body>
+</html>
